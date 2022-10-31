@@ -11,3 +11,13 @@ function ToDo() {
   this.tasks = {};
   this.currentId = 0;
 }
+
+ToDo.prototype.addTask = function(task) {
+  task.id = this.assignId();
+  this.tasks[task.id] = task;
+}
+
+ToDo.prototype.assignId = function () {
+  this.currentId += 1;
+  return this.currentId;
+}

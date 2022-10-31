@@ -48,6 +48,16 @@ let todo = new ToDo();
 todo;
 Expected Output: {tasks: , currentId: 0}
 
+Describe: ToDo.prototype.addTask()
+
+Test: "It should add a task to the todo list and increment the currentId by one"
+Code: 
+let task1 = new Task("dishes", false)
+let todo = new ToDo();
+todo.addTask(task1);
+todo;
+Expected Output: ToDo {tasks: {task: "dishes", completed: false}, currentId: 1}
+
 ## Known Bugs
 
 * _Any known issues_
