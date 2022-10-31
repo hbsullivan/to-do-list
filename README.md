@@ -40,6 +40,14 @@ let task1 = new Task("dishes", false)
 task1.completed
 Expected Output = true 
 
+Describe: Todo()
+
+Test: "It should create an object that includes a currentId and tasks"
+Code:
+let todo = new ToDo();
+todo;
+Expected Output: {tasks: , currentId: 0}
+
 ## Known Bugs
 
 * _Any known issues_
