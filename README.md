@@ -32,6 +32,14 @@ let task1 = new Task("dishes", false)
 task1
 Expected Output: { task: "dishes", completed: false }
 
+Describe: taskCompleted();
+
+Test: "It should allow the user to indicate a task is completed"
+Code: 
+let task1 = new Task("dishes", false)
+task1.completed
+Expected Output = true 
+
 ## Known Bugs
 
 * _Any known issues_
