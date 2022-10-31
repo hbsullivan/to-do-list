@@ -58,6 +58,16 @@ todo.addTask(task1);
 todo;
 Expected Output: ToDo {tasks: {task: "dishes", completed: false}, currentId: 1}
 
+Describe: ToDo.prototype.removeTask()
+
+Test: "It should remove a task from the todo list"
+Code: 
+let task1 = new Task("dishes", false)
+let todo = new ToDo();
+todo.removeTask(1);
+todo;
+Expected Output: {tasks: , currentId: 1}
+
 ## Known Bugs
 
 * _Any known issues_
